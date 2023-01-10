@@ -1,0 +1,12 @@
+Tarea-reviewCode
+
+Se encontro error en la archivo origen-Matricula.cpp
+En la línea 327
+
+provisionalVector[index] = subjectsVector [index];
+
+Esta sucediendo un conflicto de datos cuando se satura o utiliza un combinado de los escenarios de prueba. Lo que suele suceder es ocasionar un bucle o se cierra
+por el conflicto del delete[]
+
+También, tiene un leve fallo en el uso de los datos, ya que si usas los escenarios y hago un nuevo registro con la cantidad de estudiantes, lo que hara es que si no
+se agrega notas y materias, solamente nombres. El programa reutiliza las notas anteriores pre-recargadas de los escenarios.
